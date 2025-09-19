@@ -8,7 +8,7 @@ const isGitHubPages = process.env.TARGET_DEPLOY === 'github';
 export default defineConfig({
     base: isGitHubPages ? '/ui-VitePress/' : '/', // GitHub Pages 的主页地址与 本地以及Cloudflare Pages不同，因此利用环境变量判断
     lang: 'zh-CN',
-    title: '测试title',
+    title: '个人笔记',
     description: 'Vite & Vue powered static site generator.',
 
     head: [
@@ -21,40 +21,186 @@ export default defineConfig({
     themeConfig: {
         logo: '/favicon.png',
         nav: [
-            {text: 'Example测试', link: '/example'},
-
+            {text: '示例', link: '/example'},
+            {text: 'JAVA面经', link: '/notes/java面经/java/HTTP常用状态码'},
             {
-                text: 'Dropdown Menu',
+                text: '开发笔记',
                 items: [
-                    {text: 'Item A', link: '/item-1'},
-                    {text: 'Item B', link: '/item-2'},
-                    {text: 'Item C', link: '/item-3'},
                     {
-                        text: 'Item dddd',
+                        text: 'JAVA',
                         items: [
-                            {text: 'Item 11', link: '/item-111'},
-                            {text: 'Item 22', link: '/item-222'},
-                            {text: 'Item 33', link: '/item-333'},
+                            {text: 'JAVA8新特性', link: '/notes/java/java8新特性/Lambda表达式'},
+                            {text: '随手记', link: '/notes/java/随手记/随手笔记'}
+                        ]
+                    },
+                    {text: '工具包hutool', link: '/notes/hutool/CollUtil'},
+                    {text: 'MYSQL', link: '/notes/mysql/常用函数'},
+                    {
+                        text: 'MAVEN',
+                        items: [
+                            {text: 'maven的特性', link: '/notes/maven/maven的特性/maven概念'},
+                            {text: 'pom的配置', link: '/notes/maven/pom的配置/pom基本配置'},
+                            {text: 'maven的使用', link: '/notes/maven/maven的使用/安装'}
                         ]
                     },
                 ]
-            }
-
-            // ...
-        ],
-
-        sidebar: [
-            {
-                text: 'Guide',
-                items: [
-                    {text: 'Example', link: '/example'},
-                    {text: 'Example1', link: 'https://www.baidu.com'},
-                    {text: 'Example2', link: '/example'},
-                    {text: 'Example3', link: '/example'},
-                    // ...
-                ],
             },
+            {
+                text: '其他',
+                items: [
+                    {text: '随手记', link: '/notes/随手记/笔记'},
+                    {text: '平台', link: '/notes/平台/淘宝开放平台/API'}
+                ]
+            }
         ],
+
+        sidebar: {
+            // 当用户位于 `/notes/java/` 目录时，会显示此侧边栏
+            '/notes/java/': [
+                {
+                    text: 'JAVA',
+                    items: [
+                        {
+                            text: 'JAVA8新特性',
+                            items: [
+                                {text: 'Lambda表达式', link: '/notes/java/java8新特性/Lambda表达式'},
+                                {text: 'Stream流', link: '/notes/java/java8新特性/Stream流'},
+                                {text: '接口默认方法', link: '/notes/java/java8新特性/接口默认方法'},
+                                {text: '方法引用', link: '/notes/java/java8新特性/方法引用'}
+                            ]
+                        },
+                        {text: '随手记', link: '/notes/java/随手记/随手笔记'}
+                    ]
+                }
+            ],
+            '/notes/hutool/': [
+                {
+                    text: 'hutool',
+                    items: [
+                        {text: '集合工具类CollUtil', link: '/notes/hutool/CollUtil'},
+                        {text: 'Map工具类MapUtil', link: '/notes/hutool/MapUtil'}
+                    ]
+                }
+            ],
+            '/notes/mysql/': [
+                {
+                    text: 'MYSQL',
+                    link: '/notes/mysql/常用函数'
+                }
+            ],
+            '/notes/maven/': [
+                {
+                    text: 'MAVEN',
+                    items: [
+                        {
+                            text: 'maven的特性',
+                            items: [
+                                {text: 'maven概念', link: '/notes/maven/maven的特性/maven概念'}
+                            ]
+                        },
+                        {
+                            text: 'pom的配置',
+                            items: [
+                                {text: 'pom基本配置', link: '/notes/maven/pom的配置/pom基本配置'},
+                                {text: '依赖-dependencies', link: '/notes/maven/pom的配置/依赖-dependencies'}
+                            ]
+                        },
+                        {
+                            text: 'maven的使用',
+                            items: [
+                                {text: '安装', link: '/notes/maven/maven的使用/安装'},
+                                {text: 'settings的配置', link: '/notes/maven/maven的使用/settings的配置'},
+                                {text: 'maven常用命令', link: '/notes/maven/maven的使用/maven常用命令'},
+                                {text: 'idea与maven', link: '/notes/maven/maven的使用/idea与maven'}
+                            ]
+                        }
+                    ]
+                }
+            ],
+            '/notes/java面经/': [
+                {
+                    text: 'java面经',
+                    items: [
+                        {
+                            text: 'java',
+                            collapsed: true,
+                            items: [
+                                {text: 'HTTP常用状态码', link: '/notes/java面经/java/HTTP常用状态码'},
+                                {text: 'JVM调优', link: '/notes/java面经/java/JVM调优'},
+                                {text: '设计模式-创建型', link: '/notes/java面经/java/设计模式-创建型'},
+                                {text: '设计模式-结构型', link: '/notes/java面经/java/设计模式-结构型'},
+                                {text: '设计模式-行为型', link: '/notes/java面经/java/设计模式-行为型'},
+                                {text: 'java-未分类', link: '/notes/java面经/java/java-未分类'}
+                            ]
+                        },
+                        {
+                            text: 'MQ',
+                            collapsed: true,
+                            items: [
+                                {text: 'RabbitMQ', link: '/notes/java面经/MQ/RabbitMQ'},
+                                {text: 'MQ-未分类', link: '/notes/java面经/MQ/MQ-未分类'}
+                            ]
+                        },
+                        {
+                            text: 'Redis',
+                            collapsed: true,
+                            items: [
+                                {text: 'Redis基础', link: '/notes/java面经/Redis/Redis基础'},
+                                {text: 'Redis高可用', link: '/notes/java面经/Redis/Redis高可用'},
+                                {text: '实战分析', link: '/notes/java面经/Redis/实战分析'}
+                            ]
+                        },
+                        {
+                            text: '数据库',
+                            link: '/notes/java面经/数据库/数据库-未分类'
+                        },
+                        {
+                            text: '数据结构',
+                            link: '/notes/java面经/数据结构/数据结构基础'
+                        },
+                        {
+                            text: '框架',
+                            link: '/notes/java面经/框架/框架-未分类'
+                        },
+                        {
+                            text: '问题列表',
+                            collapsed: true,
+                            items: [
+                                {text: '问题列表', link: '/notes/java面经/问题列表/问题列表'},
+                                {text: '部分示例题', link: '/notes/java面经/问题列表/部分示例题'}
+                            ]
+                        },
+                    ]
+                }
+            ],
+            '/notes/平台/': [
+                {
+                    text: '平台',
+                    items: [
+                        {
+                            text: '淘宝开放平台',
+                            items: [
+                                {text: 'API', link: '/notes/平台/淘宝开放平台/API'},
+                                {text: '快递公司编码', link: '/notes/平台/淘宝开放平台/快递公司编码'}
+                            ]
+                        },
+                        {
+                            text: '抖音开放平台',
+                            items: [
+                                {text: 'API', link: '/notes/平台/抖音开放平台/API'},
+                                {text: '快递公司编码', link: '/notes/平台/抖音开放平台/快递公司编码'}
+                            ]
+                        }
+                    ]
+                }
+            ],
+            '/notes/随手记/': [
+                {
+                    text: '随手记',
+                    link: '/notes/随手记/笔记'
+                }
+            ]
+        },
 
         // 本地搜索
         search: {
