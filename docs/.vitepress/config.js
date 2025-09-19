@@ -1,9 +1,12 @@
 // .vitepress/config.js
 import {defineConfig} from 'vitepress';
 
+const isGitHubPages = process.env.TARGET_DEPLOY === 'github';
+
 // refer https://vitepress.dev/reference/site-config for details
 export default defineConfig({
     // base: '/ui-VitePress/', // github项目名，用于GitHub Pages自动构建
+    base: isGitHubPages ? '/ui-VitePress/' : '/',
     lang: 'zh-CN',
     title: '测试title',
     description: 'Vite & Vue powered static site generator.',
