@@ -210,7 +210,7 @@ export default defineConfig({
         // 编辑链接,以在 GitHub 或 GitLab 等 Git 管理服务上编辑页面
         // editLink: {
         //     pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
-        //     text: 'Edit this page on GitHub'
+        //     text: '在 GitHub 上编辑此页面'
         // },
 
         // 显示页面最后更新时间，你必须提交 markdown 文件才能看到最后更新时间。
@@ -220,6 +220,10 @@ export default defineConfig({
         footer: {
             message: '页脚：版权前显示的信息',
             copyright: '页脚：实际的版权文本'
+        },
+        docFooter: {
+            prev: '上一页',
+            next: '下一页'
         }
     }
 });
