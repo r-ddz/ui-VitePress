@@ -3,6 +3,7 @@ import {defineConfig} from 'vitepress';
 
 // refer https://vitepress.dev/reference/site-config for details
 export default defineConfig({
+    base: '/ui-VitePress/', // github项目名，用于GitHub Pages自动构建
     lang: 'zh-CN',
     title: '测试title',
     description: 'Vite & Vue powered static site generator.',
