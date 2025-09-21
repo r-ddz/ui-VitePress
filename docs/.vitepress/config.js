@@ -46,6 +46,12 @@ export default defineConfig({
                 ]
             },
             {
+                text: '部署与运维',
+                items: [
+                    {text: 'docker', link: '/notes/部署与运维/docker/Docker简介'}
+                ]
+            },
+            {
                 text: '其他',
                 items: [
                     {text: '随手记', link: '/notes/随手记/笔记'},
@@ -83,10 +89,7 @@ export default defineConfig({
                 }
             ],
             '/notes/mysql/': [
-                {
-                    text: 'MYSQL',
-                    link: '/notes/mysql/常用函数'
-                }
+                {text: 'MYSQL', link: '/notes/mysql/常用函数'}
             ],
             '/notes/maven/': [
                 {
@@ -194,6 +197,10 @@ export default defineConfig({
                     ]
                 }
             ],
+            '/notes/部署与运维/docker/': [
+                {text: 'Docker简介', link: '/notes/部署与运维/docker/Docker简介'},
+                {text: 'Docker常用命令', link: '/notes/部署与运维/docker/Docker常用命令'}
+            ],
             '/notes/随手记/': [
                 {
                     text: '随手记',
@@ -208,13 +215,19 @@ export default defineConfig({
         },
 
         // 编辑链接,以在 GitHub 或 GitLab 等 Git 管理服务上编辑页面
-        // editLink: {
-        //     pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
-        //     text: '在 GitHub 上编辑此页面'
-        // },
+        editLink: {
+            pattern: 'https://github.com/r-ddz/ui-VitePress/edit/main/docs/:path',
+            text: '在 GitHub 上编辑此页面'
+        },
+
+        lightModeSwitchTitle: '切换到浅色模式',
+        darkModeSwitchTitle: '切换到深色模式',
 
         // 显示页面最后更新时间，你必须提交 markdown 文件才能看到最后更新时间。
-        lastUpdated: true,
+        // lastUpdated: true,
+        lastUpdated: {
+            text: '最后更新于'
+        },
 
         // 页脚
         footer: {
@@ -224,6 +237,9 @@ export default defineConfig({
         docFooter: {
             prev: '上一页',
             next: '下一页'
+        },
+        outline: {
+            label: '页面导航'
         }
     }
 });
