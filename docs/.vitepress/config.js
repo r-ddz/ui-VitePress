@@ -126,7 +126,7 @@ export default defineConfig({
                     items: [
                         {
                             text: 'java',
-                            collapsed: true,
+                            collapsed: false,
                             items: [
                                 {text: 'HTTP常用状态码', link: '/notes/java面经/java/HTTP常用状态码'},
                                 {text: 'JVM调优', link: '/notes/java面经/java/JVM调优'},
@@ -138,7 +138,7 @@ export default defineConfig({
                         },
                         {
                             text: 'MQ',
-                            collapsed: true,
+                            collapsed: false,
                             items: [
                                 {text: 'RabbitMQ', link: '/notes/java面经/MQ/RabbitMQ'},
                                 {text: 'MQ-未分类', link: '/notes/java面经/MQ/MQ-未分类'}
@@ -146,7 +146,7 @@ export default defineConfig({
                         },
                         {
                             text: 'Redis',
-                            collapsed: true,
+                            collapsed: false,
                             items: [
                                 {text: 'Redis基础', link: '/notes/java面经/Redis/Redis基础'},
                                 {text: 'Redis高可用', link: '/notes/java面经/Redis/Redis高可用'},
@@ -167,7 +167,7 @@ export default defineConfig({
                         },
                         {
                             text: '问题列表',
-                            collapsed: true,
+                            collapsed: false,
                             items: [
                                 {text: '问题列表', link: '/notes/java面经/问题列表/问题列表'},
                                 {text: '部分示例题', link: '/notes/java面经/问题列表/部分示例题'}
@@ -199,7 +199,20 @@ export default defineConfig({
             ],
             '/notes/部署与运维/docker/': [
                 {text: 'Docker简介', link: '/notes/部署与运维/docker/Docker简介'},
-                {text: 'Docker常用命令', link: '/notes/部署与运维/docker/Docker常用命令'}
+                {text: 'Docker常用命令', link: '/notes/部署与运维/docker/Docker常用命令'},
+                {text: 'Docker迁移与备份', link: '/notes/部署与运维/docker/Docker迁移与备份'},
+                {text: 'Dockerfile-构建镜像工具', link: '/notes/部署与运维/docker/Dockerfile-构建镜像工具'},
+                {text: 'DockerCompose-镜像容器编排工具', link: '/notes/部署与运维/docker/DockerCompose-镜像容器编排工具'},
+                {text: 'registry-镜像仓库', link: '/notes/部署与运维/docker/registry-镜像仓库'},
+                {
+                    text: 'Docker实战',
+                    collapsed: false,
+                    items: [
+                        {text: 'Docker部署MySQL', link: '/notes/部署与运维/docker/Docker部署MySQL'},
+                        {text: 'Docker部署redis', link: '/notes/部署与运维/docker/Docker部署redis'},
+                        {text: 'Docker部署tomcat', link: '/notes/部署与运维/docker/Docker部署tomcat'}
+                    ]
+                }
             ],
             '/notes/随手记/': [
                 {
