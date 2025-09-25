@@ -48,7 +48,14 @@ export default defineConfig({
             {
                 text: '部署与运维',
                 items: [
-                    {text: 'docker', link: '/notes/部署与运维/docker/Docker简介'}
+                    {text: 'Docker', link: '/notes/部署与运维/docker/Docker简介'},
+                    {text: 'Jenkins', link: '/notes/部署与运维/jenkins/Jenkins简介'},
+                    {
+                        text: '实战',
+                        items: [
+                            {text: '自动化', link: '/notes/部署与运维/实战/我的自动化进化史'}
+                        ]
+                    }
                 ]
             },
             {
@@ -213,6 +220,12 @@ export default defineConfig({
                         {text: 'Docker部署tomcat', link: '/notes/部署与运维/docker/Docker部署tomcat'}
                     ]
                 }
+            ],
+            '/notes/部署与运维/jenkins/': [
+                {text: 'Jenkins简介', link: '/notes/部署与运维/jenkins/Jenkins简介'}
+            ],
+            '/notes/部署与运维/实战/': [
+                {text: '我的自动化进化史', link: '/notes/部署与运维/实战/我的自动化进化史'}
             ],
             '/notes/随手记/': [
                 {
