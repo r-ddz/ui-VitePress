@@ -46,6 +46,13 @@ export default defineConfig({
                 ]
             },
             {
+                text: 'dev笔记',
+                items: [
+                    {text: '实战', link: '/notes/dev笔记/实战经验'},
+                    {text: '微服务', link: '/notes/dev笔记/微服务/微服务概念'}
+                ]
+            },
+            {
                 text: '部署与运维',
                 items: [
                     {text: 'Docker', link: '/notes/部署与运维/docker/Docker简介'},
@@ -201,6 +208,20 @@ export default defineConfig({
                                 {text: '快递公司编码', link: '/notes/平台/抖音开放平台/快递公司编码'}
                             ]
                         }
+                    ]
+                }
+            ],
+            '/notes/dev笔记/微服务/': [
+                {
+                    text: '微服务',
+                    items: [
+
+                        {text: '微服务概念', link: '/notes/dev笔记/微服务/微服务概念'},
+                        {text: '1.1 注册中心Nacos', link: '/notes/dev笔记/微服务/1.1 注册中心Nacos'},
+                        {text: '2.1 负载均衡Ribbon', link: '/notes/dev笔记/微服务/2.1 负载均衡Ribbon'},
+                        {text: '3.1 服务调用OpenFeign', link: '/notes/dev笔记/微服务/3.1 服务调用OpenFeign'},
+                        {text: '4.1 服务保护Sentinel', link: '/notes/dev笔记/微服务/4.1 服务保护Sentinel'},
+                        {text: '5.1 API网关Gateway', link: '/notes/dev笔记/微服务/5.1 API网关Gateway'}
                     ]
                 }
             ],
