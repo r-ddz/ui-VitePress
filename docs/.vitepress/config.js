@@ -50,7 +50,8 @@ export default defineConfig({
                 text: 'dev笔记',
                 items: [
                     {text: '实战', link: '/notes/dev笔记/实战经验'},
-                    {text: '微服务', link: '/notes/dev笔记/微服务/微服务概念'}
+                    {text: '微服务', link: '/notes/dev笔记/微服务/微服务概念'},
+                    {text: '锁的概念', link: '/notes/dev笔记/锁的概念'}
                 ]
             },
             {
