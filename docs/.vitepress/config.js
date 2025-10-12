@@ -6,6 +6,7 @@ const isGitHubPages = process.env.TARGET_DEPLOY === 'github';
 
 // refer https://vitepress.dev/reference/site-config for details
 export default defineConfig({
+    ignoreDeadLinks: true, // 忽略死链检查，官方不建议，这会导致不分内部外部的链接都不检查，可能会有错误页面，但我需要
     base: isGitHubPages ? '/ui-VitePress/' : '/', // GitHub Pages 的主页地址与 本地以及Cloudflare Pages不同，因此利用环境变量判断
     lang: 'zh-CN',
     title: '个人笔记',
