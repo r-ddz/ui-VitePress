@@ -23,6 +23,7 @@ export default defineConfig({
         logo: '/favicon.png',
         nav: [
             {text: '示例', link: '/example'},
+            {text: '押题', link: '/notes/面试押题/小米1/项目经验'},
             {text: 'JAVA面经', link: '/notes/java面经/java/HTTP常用状态码'},
             {
                 text: '开发笔记',
@@ -77,6 +78,15 @@ export default defineConfig({
         ],
 
         sidebar: {
+            // 当用户位于 `/notes/面试押题/` 目录时，会显示此侧边栏
+            '/notes/面试押题/': [
+                {text: '1、项目经验（必问）', link: '/notes/面试押题/小米1/项目经验'},
+                {text: '2、Java并发与JVM（必考）', link: '/notes/面试押题/小米1/Java并发与JVM'},
+                {text: '3、数据库与Redis（重中之重）', link: '/notes/面试押题/小米1/数据库与Redis'},
+                {text: '4、框架与中间件', link: '/notes/面试押题/小米1/框架与中间件'},
+                {text: '5、系统设计', link: '/notes/面试押题/小米1/系统设计'},
+                {text: '6、代码题', link: '/notes/面试押题/小米1/代码题'}
+            ],
             // 当用户位于 `/notes/java/` 目录时，会显示此侧边栏
             '/notes/java/': [
                 {
