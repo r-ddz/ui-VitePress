@@ -56,6 +56,12 @@ export default defineConfig({
                 ]
             },
             {
+                text: 'jzt任务记录',
+                items: [
+                    {text: '云ERP', link: '/notes/九州通任务记录/云ERP'}
+                ]
+            },
+            {
                 text: '部署与运维',
                 items: [
                     {text: 'Docker', link: '/notes/部署与运维/docker/Docker简介'},
@@ -227,13 +233,20 @@ export default defineConfig({
                 {
                     text: '微服务',
                     items: [
-
                         {text: '微服务概念', link: '/notes/dev笔记/微服务/微服务概念'},
                         {text: '1.1 注册中心Nacos', link: '/notes/dev笔记/微服务/1.1 注册中心Nacos'},
                         {text: '2.1 负载均衡Ribbon', link: '/notes/dev笔记/微服务/2.1 负载均衡Ribbon'},
                         {text: '3.1 服务调用OpenFeign', link: '/notes/dev笔记/微服务/3.1 服务调用OpenFeign'},
                         {text: '4.1 服务保护Sentinel', link: '/notes/dev笔记/微服务/4.1 服务保护Sentinel'},
                         {text: '5.1 API网关Gateway', link: '/notes/dev笔记/微服务/5.1 API网关Gateway'}
+                    ]
+                }
+            ],
+            '/notes/九州通任务记录/': [
+                {
+                    text: 'jzt任务记录',
+                    items: [
+                        {text: '云ERP', link: '/notes/九州通任务记录/云ERP'}
                     ]
                 }
             ],
