@@ -54,6 +54,7 @@ spring:
 | 同步环境 | 代码                                 | nacos配置 | SQL脚本 |
 |------|------------------------------------|---------|-------|
 | dev  | <Badge type="tip" text="master" /> | 无       | 无     |
+| test  | <Badge type="tip" text="test" />   | 无       | 无     |
 
 
 ## 待办中心-跳转ac需求
