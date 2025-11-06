@@ -79,8 +79,10 @@ spring:
 
 nacos配置中心：
 ```yaml
-wotu:
-  todo_url: http://testac.mc.dev.jzterp.net
+erp:
+  ac_url: https://test-ac.dev.jzterp.net
+#wotu:
+#  todo_url: http://testac.mc.dev.jzterp.net
 bpm:
   bill:
     config:
