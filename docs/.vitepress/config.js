@@ -52,7 +52,8 @@ export default defineConfig({
                 items: [
                     {text: '实战', link: '/notes/dev笔记/实战经验'},
                     {text: '微服务', link: '/notes/dev笔记/微服务/微服务概念'},
-                    {text: '锁的概念', link: '/notes/dev笔记/锁的概念'}
+                    {text: '锁的概念', link: '/notes/dev笔记/锁的概念'},
+                    {text: '实体命名规则', link: '/notes/dev笔记/实体命名规则'}
                 ]
             },
             {
