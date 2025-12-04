@@ -79,6 +79,7 @@ export default defineConfig({
                 text: '其他',
                 items: [
                     {text: '随手记', link: '/notes/随手记/笔记'},
+                    {text: '组件demo', link: '/notes/随手记/组件demo'},
                     {text: '平台', link: '/notes/平台/淘宝开放平台/API'}
                 ]
             }
@@ -275,10 +276,8 @@ export default defineConfig({
                 {text: '我的自动化进化史', link: '/notes/部署与运维/实战/我的自动化进化史'}
             ],
             '/notes/随手记/': [
-                {
-                    text: '随手记',
-                    link: '/notes/随手记/笔记'
-                }
+                {text: '随手记', link: '/notes/随手记/笔记'},
+                {text: '组件demo', link: '/notes/随手记/组件demo'}
             ]
         },
 
