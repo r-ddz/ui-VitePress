@@ -80,7 +80,8 @@ export default defineConfig({
                 items: [
                     {text: '随手记', link: '/notes/随手记/笔记'},
                     {text: '组件demo', link: '/notes/随手记/组件demo'},
-                    {text: '平台', link: '/notes/平台/淘宝开放平台/API'}
+                    {text: '平台', link: '/notes/平台/淘宝开放平台/API'},
+                    {text: '程序员白嫖大法', link: '/notes/程序员白嫖大法/免费的域名'}
                 ]
             }
         ],
@@ -230,6 +231,11 @@ export default defineConfig({
                         }
                     ]
                 }
+            ],
+            '/notes/程序员白嫖大法/': [
+                {text: '免费的域名', link: '/notes/程序员白嫖大法/免费的域名'},
+                {text: '给Worker添加自定义域', link: '/notes/程序员白嫖大法/给Worker添加自定义域'},
+                {text: '创建二级域名', link: '/notes/程序员白嫖大法/创建二级域名'}
             ],
             '/notes/dev笔记/微服务/': [
                 {
